@@ -1,0 +1,46 @@
+{
+  "name": "mobile-wallet-be",
+  "version": "1.0.0",
+  "description": "This is the package for generating the passes for apple and google wallet",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "files": [
+    "lib/"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublishOnly": "npm run build",
+    "test": "jest",
+    "test:coverage": "jest --watchAll=false --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.23.7",
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-typescript": "^7.23.3",
+    "@types/jest": "^28.0.3",
+    "@types/node": "^20.10.1",
+    "babel-jest": "^28.0.3",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "google-auth-library": "^8.9.0",
+    "jest": "^28.0.3",
+    "jsonwebtoken": "^9.0.2",
+    "node-apn": "^3.0.0",
+    "passkit-generator": "^3.1.11",
+    "ts-jest": "^28.0.3"
+  },
+  "engines": {
+    "node": ">=12.13.0"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "src/apple",
+      "lib"
+    ]
+  }
+}
