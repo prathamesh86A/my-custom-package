@@ -1,7 +1,7 @@
 {
-  "name": "mobile-wallet-be",
+  "name": "my-custom-package",
   "version": "1.0.0",
-  "description": "This is the package for generating the passes for apple and google wallet",
+  "description": "This is the package ",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
   "files": [
